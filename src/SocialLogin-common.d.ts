@@ -97,6 +97,10 @@ export interface IConfig {
          */
         initialize?: boolean;
         /**
+         * The ClientId
+         */
+        clientId?: string;
+        /**
          * The server client ID for requesting server auth token.
          */
         serverClientId?: string;

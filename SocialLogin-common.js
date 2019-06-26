@@ -141,8 +141,8 @@ var Social = /** @class */ (function () {
             }
             // TODO
             /* case "twitter":
-                this.loginWithTwitter(callback);
-                break; */
+                      this.loginWithTwitter(callback);
+                      break; */
             default:
                 throw "Provider '" + provider + "' is NOT supported!";
         }

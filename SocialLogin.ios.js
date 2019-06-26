@@ -47,6 +47,7 @@ var SocialLogin = /** @class */ (function (_super) {
         }
         if (this.Config.google) {
             this.googleSignIn = GIDSignIn.sharedInstance();
+            this.googleSignIn.clientID = this.Config.google.clientId;
             this.googleSignIn.shouldFetchBasicProfile = this.Config.google.shouldFetchBasicProfile;
             this.googleSignIn.scopes = NSArray.arrayWithArray(this.Config
                 .google.scopes);

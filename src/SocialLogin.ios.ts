@@ -63,6 +63,7 @@ export class SocialLogin extends Social {
 
         if (this.Config.google) {
             this.googleSignIn = GIDSignIn.sharedInstance();
+            this.googleSignIn.clientID = this.Config.google.clientId;
             this.googleSignIn.shouldFetchBasicProfile = this.Config.google.shouldFetchBasicProfile;
             this.googleSignIn.scopes = NSArray.arrayWithArray(<any>this.Config
                 .google.scopes);
